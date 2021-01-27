@@ -1,0 +1,48 @@
+.drum-pad {
+  border: 0.5mm ridge rgba(113, 36, 146, 0.6);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.69rem;
+  background: hsl(204, 6%, 33%);
+  color: rgb(240, 255, 240);
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(97, 0, 187, 0.256);
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  -webkit-transition: background 15s;
+  transition: background 15s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    2fr
+    1fr
+    0;
+  grid-template-areas:
+    "trig"
+    "label";
+}
+
+.drum-pad:hover {
+  background: hsla(204, 10%, 62%, 0.815);
+}
+
+.drum-pad * {
+  margin: 0.3rem;
+}
+
+#trig-label {
+  grid-area: trig;
+  justify-self: center;
+  align-self: center;
+}
+
+#drum-pad-label {
+  grid-area: label;
+  justify-self: center;
+  align-self: center;
+}

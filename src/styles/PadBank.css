@@ -1,0 +1,13 @@
+#pad-bank {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "Q W E"
+    "A S D"
+    "Z X C";
+  margin: 1rem 4rem 1.5rem 4rem;
+  transform-style: preserve-3d;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
