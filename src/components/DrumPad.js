@@ -27,28 +27,16 @@ export const DrumPad = ({
     }
   };
 
-  const textSize = (label) => {
-    if (label.length > 9) {
-      return;
-    }
-  };
-
   return (
     <button
       onClick={makeSound}
       style={{
         gridArea: `${trig}`,
       }}
-      id={label + bank}
+      id={label}
       className="drum-pad"
     >
-      <p id="trig-label">{trig}</p>
-      <p
-        style={{ fontSize: `${label.length > 9 ? ".75rem" : "1rem"}` }}
-        id="drum-pad-label"
-      >
-        {label}
-      </p>
+      {trig}
       <audio className="clip" ref={audioClip} id={trig} src={sound} />
     </button>
   );

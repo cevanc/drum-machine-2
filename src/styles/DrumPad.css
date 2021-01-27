@@ -16,15 +16,9 @@
   transform-style: preserve-3d;
   -webkit-transition: background 15s;
   transition: background 15s;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:
-    2fr
-    1fr
-    0;
-  grid-template-areas:
-    "trig"
-    "label";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drum-pad:hover {
@@ -32,17 +26,4 @@
 }
 
 .drum-pad * {
-  margin: 0.3rem;
-}
-
-#trig-label {
-  grid-area: trig;
-  justify-self: center;
-  align-self: center;
-}
-
-#drum-pad-label {
-  grid-area: label;
-  justify-self: center;
-  align-self: center;
 }
